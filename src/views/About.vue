@@ -1,5 +1,3 @@
-<template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+<template src="./about-app.html"></template>
+<script src="./about-app.js"></script>
+<style src="./about-app.css" scoped></style>

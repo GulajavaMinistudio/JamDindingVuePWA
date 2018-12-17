@@ -1,0 +1,120 @@
+/*.clock {*/
+/*background: #f2f2f2 url(../../assets/ios_clock.svg) no-repeat center;*/
+/*border-radius: 50%;*/
+/*background-size: 90%;*/
+/*height: 100%;*/
+/*padding-bottom: 40%;*/
+/*position: relative;*/
+/*width: 40%;*/
+/*margin-top: 5%;*/
+/*margin-left: 30%;*/
+/*}*/
+
+.clock {
+    background: #ffffff url(../../assets/ios_clock.svg) no-repeat center;
+    border-radius: 10%;
+    background-size: 100%;
+    height: 100%;
+    padding-bottom: 85%;
+    position: relative;
+    width: 80%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.clock.simple:after {
+    background: #000;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 5%;
+    height: 5%;
+    z-index: 10;
+}
+
+.clock::after {
+    background: #DC3737;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 5%;
+    height: 5%;
+    z-index: 10
+}
+
+.minutes-container,
+.hours-container,
+.seconds-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hours {
+    background: #2A363B;
+    height: 22%;
+    left: 48.85%;
+    position: absolute;
+    top: 28%;
+    transform-origin: 50% 100%;
+    width: 2.5%;
+    border-radius: 85%/10%;
+}
+
+
+.minutes {
+    background: #2A363B;
+    height: 40%;
+    left: 49%;
+    position: absolute;
+    top: 10%;
+    transform-origin: 50% 100%;
+    width: 2%;
+    border-radius: 150%/10%;
+}
+
+
+.seconds {
+    background: #DC3737;
+    height: 45%;
+    left: 49.5%;
+    position: absolute;
+    top: 14%;
+    transform-origin: 50% 80%;
+    width: 1.5%;
+    z-index: 8;
+    border-radius: 200%/10%;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.hours-container {
+    animation: rotate 43200s infinite linear;
+}
+
+.minutes-container {
+    transition: transform 0.3s cubic-bezier(.4, 2.08, .55, .44);
+}
+
+.seconds-container {
+    transition: transform 0.2s cubic-bezier(.4, 2.08, .55, .44);
+}
+
+/*.minutes-container {
+      animation: rotate 3600s infinite steps(60);
+    }
+    .seconds-container {
+      animation: rotate 60s infinite steps(60);
+    }*/

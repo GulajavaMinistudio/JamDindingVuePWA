@@ -1,0 +1,14 @@
+.font-settings {
+    color: white;
+}
+
+.font-settings span {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.margin-settings {
+    margin: 0 1em 1em 1em;
+}

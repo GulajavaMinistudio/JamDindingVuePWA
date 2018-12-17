@@ -1,0 +1,45 @@
+<body>
+
+  <div id="outer">
+
+    <div class="container">
+
+      <div class="row class-padding-top">
+
+        <div class="col-md-6 offset-md-3">
+
+          <div id="container" class="container">
+
+            <div class="row">
+
+              <!--komponen dengan isi jam-->
+              <div class="col-md-10 offset-md-1">
+
+                <h3 class="text-center class-text-jam-dinding">Jam Dinding</h3>
+                <div>
+                  <jam-dinding></jam-dinding>
+                </div>
+                <h5 class="text-center class-text-jam-tanggal">{{stringWaktuTanggal}}</h5>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="float-md-right margin-settings" v-on:click="pindahHalamanTentang()">
+    <div class=" font-settings">
+      <i class="fas fa-sliders-h"></i>
+      <span>Tentang Aplikasi</span>
+    </div>
+  </div>
+
+</body>
