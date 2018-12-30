@@ -1,5 +1,14 @@
-# jam-dinding-vue-pwa
+# Jam Dinding Digital Vue
 
+Aplikasi Jam Dinding dengan framework Vue JS dan tambahan Progressive Web Apps sehingga bisa dipakai secara offline di perangkat komputer, ataupun di perangkat smartphone Android. Untuk perangkat Android, bisa dibuat shortcut aplikasi nya dengan bantuan browser Google Chrome. 
+
+Dokumentasi mengenai Vue JS dan juga dokumentasi Service Workernya dapat dilihat di sini :
+
+https://vuejs.org/v2/guide/installation.html
+
+https://developers.google.com/web/tools/workbox/
+
+## Lain-lain 
 ## Project setup
 ```
 npm install
