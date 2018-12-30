@@ -1,0 +1,8 @@
+{
+    "name": "jam-dinding-vue",
+    "version": 2,
+    "alias": "jam-dinding-vue",
+    "files": [
+      "dist"
+    ]
+  }
